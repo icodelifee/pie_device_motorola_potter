@@ -180,6 +180,26 @@ public class KeyHandler implements DeviceKeyHandler {
         }
         return out;
     }
+    public boolean canHandleKeyEvent(KeyEvent event){
+	return false;
+    }
+
+    public Intent isActivityLaunchEvent(KeyEvent event) {
+        return null;
+    }
+
+    public boolean isCameraLaunchEvent(KeyEvent event) {
+        return false;
+    }
+
+    public boolean isWakeEvent(KeyEvent event){
+        return false;
+    }
+
+    public boolean isDisabledKeyEvent(KeyEvent event) {
+        return false;
+    }
+
 
     private static ActivityInfo getRunningActivityInfo(Context context) {
         final ActivityManager am = (ActivityManager) context
