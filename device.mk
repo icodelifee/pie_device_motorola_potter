@@ -110,7 +110,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     libbson \
-    Camera2 \
+    Snap \
     libgui_vendor \
     camera.device@1.0-impl \
     camera.device@3.2-impl \
@@ -307,7 +307,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-service-qti
+    android.hardware.power@1.1-service-qti
 
 # Qualcomm
 PRODUCT_COPY_FILES += \
@@ -356,10 +356,11 @@ PRODUCT_COPY_FILES += \
 
 # IMS
 PRODUCT_PACKAGES += \
-    ims-ext-common
+    ims-ext-common \
+    telephony-ext
 
-#PRODUCT_BOOT_JARS += \
-#    telephony-ext
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # Sensors
 PRODUCT_COPY_FILES += \
