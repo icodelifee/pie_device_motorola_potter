@@ -110,7 +110,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     libbson \
-    Snap \
+    Camera2 \
     libgui_vendor \
     camera.device@1.0-impl \
     camera.device@3.2-impl \
@@ -190,8 +190,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service_32 \
-    fingerprint.msm8953
+    android.hardware.biometrics.fingerprint@2.1
 
 # FM
 PRODUCT_PACKAGES += \
@@ -357,6 +356,7 @@ PRODUCT_COPY_FILES += \
 # IMS
 PRODUCT_PACKAGES += \
     ims-ext-common \
+    qti-telephony-common \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \
@@ -387,7 +387,7 @@ PRODUCT_COPY_FILES += \
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
-    textclassifier.smartselection.bundle1
+    textclassifier.bundle1
 
 # USB
 PRODUCT_PACKAGES += \
