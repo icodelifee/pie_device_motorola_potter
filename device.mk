@@ -110,6 +110,7 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     libbson \
+    GoogleCameraMod \
     Camera2 \
     libgui_vendor \
     camera.device@1.0-impl \
@@ -214,7 +215,6 @@ PRODUCT_PACKAGES += \
 
 # health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.0-impl \
     android.hardware.health@2.0-service
 
 # IRSC
